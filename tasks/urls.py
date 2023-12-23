@@ -7,5 +7,5 @@ router = routers.DefaultRouter()
 router.register(r'', TaskView, 'task')
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]

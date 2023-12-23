@@ -23,5 +23,5 @@ urlpatterns = [
     path('tasks/', include('tasks.urls')),
     path('users/', UserCreateView.as_view(), name="user-create"),
     path('login/', obtain_auth_token, name='login'),
-    path('users/me/', CurrentUserView.as_view(), name='current_user')
+    path('users/me/', CurrentUserView.as_view(), name='current_user'),
 ]

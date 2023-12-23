@@ -6,7 +6,7 @@ admin.site.index_title = "TODO"
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'description', 'completed', 'user', 'title_length')
+    list_display = ('id', 'title', 'completed', 'user', 'title_length')
     list_per_page = 10
     actions = ['complete_task', 'uncomplete_task']
 
